@@ -18,10 +18,13 @@ cd decentra aid: npm run start
 
 sign into metamask
 
+##  DecentraAid Final Project: How to use the DApp
+# 1 This is how the DApp should look like after launching
 ![image](https://github.com/user-attachments/assets/a4986832-69a8-4bc8-a8eb-ac14baa08812)
+# 2 Create Events button is reserved only for event coordinators, and this button will open a pop-up for them to enter event details. In order to create an event, you would click on the “Create Event” button. You would then fill in all the required fields. Once done, you press the “Create Event” button at the bottom then press the “Close” button to get out of the prompt. Once you refresh the page, you will now see your event popup.
 
 ![image](https://github.com/user-attachments/assets/460ee41e-3374-440f-890b-85970cc8c71e)
-
+# 3
 ![image](https://github.com/user-attachments/assets/c197c127-a6e8-4cdb-bb83-2418c9499498)
 
 ![image](https://github.com/user-attachments/assets/b9e2e985-3508-43da-a0e8-99d2df6018fe)
