@@ -31,7 +31,7 @@ This is the form for event management
 This is the form of volunteer management 
 ![image](https://github.com/user-attachments/assets/e6f5686e-4f14-4229-a66c-cc3605cb2748)
 this is how the volunteer management would look after using a different metamask accounts to fill out the forms
-![image](https://github.com/user-attachments/assets/5da18b6b-101c-477a-88c2-c20ef4a46039)
+![image](https://github.com/user-attachments/assets/5da18b6b-101c-477a-88c2-c20ef4a46039) <br>
 this is how event management would look like after different metamask accounts signed up
 ![image](https://github.com/user-attachments/assets/4a3d54a7-7d59-43bf-be0a-cd94560fda11)
 This is Jon's output of using getHours, getAttendanceRate
