@@ -1,7 +1,8 @@
 # csc 196D Introduction to BlockChain
 
-<h> DecentraAid Final Project<h>
+##  DecentraAid Final Project
 
+how to start:<br>
 Launch ganache-cli
 
 truffle compile within decentra_aid directory
