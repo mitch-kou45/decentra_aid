@@ -17,3 +17,14 @@ grab contract address and replace contract variable in app.js file
 cd decentra aid: npm run start
 
 sign into metamask
+
+![image](https://github.com/user-attachments/assets/a4986832-69a8-4bc8-a8eb-ac14baa08812)
+
+![image](https://github.com/user-attachments/assets/460ee41e-3374-440f-890b-85970cc8c71e)
+
+![image](https://github.com/user-attachments/assets/c197c127-a6e8-4cdb-bb83-2418c9499498)
+
+![image](https://github.com/user-attachments/assets/b9e2e985-3508-43da-a0e8-99d2df6018fe)
+
+![image](https://github.com/user-attachments/assets/e6f5686e-4f14-4229-a66c-cc3605cb2748)
+
