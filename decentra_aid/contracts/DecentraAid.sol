@@ -20,6 +20,7 @@ contract DecentraAid{
         uint numberOfLeadersRequired;
         string eventDescription;
         uint id;
+        address leaderAddress;
     }
 
     struct eventNames{
@@ -94,6 +95,7 @@ contract DecentraAid{
 
         totalEventsSignedUpFor[msg.sender]++;
         userAddress[userName] = msg.sender;
+        events[id].leaderAddress = msg.sender;
         namesOfVolunteers[id].leaderNames.push(userName);
         numberOfSigned[id].totalLeadersSignedUpForEvent++;
     }
@@ -116,7 +118,7 @@ contract DecentraAid{
     }
 
     function show(string memory name, uint id) public{
-        require(msg.sender == eventCoordinator, "Only Coordinator Has Access To This Function");
+        require(events[id].leaderAddress == msg.sender, "Only Leaders Has Access To This Function");
         uint totalHours = events[id].totalEventHours;
         address userAddr = userAddress[name];
         volunteersHours[userAddr] += totalHours;
@@ -137,10 +139,10 @@ contract DecentraAid{
     string memory date, string memory startTime, string memory endTime, uint totalEventHours, uint numberOfVolunters, 
     uint numberOfLeaders, string memory eventDescription, uint id) public{
         require(msg.sender == eventCoordinator, "Only Coordinator Has Access To This Function");
-
+        address leaderAddress = msg.sender;
         events[id] = eventDetails(eventName, orgName, location, date, 
         startTime, endTime, totalEventHours, numberOfVolunters, numberOfLeaders,
-        eventDescription, id);
+        eventDescription, id,leaderAddress);
         events[id].id = id;
         numberOfEvents++;
         statusOfEvent[id] = "Not Started";

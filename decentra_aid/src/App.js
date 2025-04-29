@@ -8,7 +8,7 @@ const web3 = new Web3("http://127.0.0.1:8545"); // Adjust to your provider (e.g.
 
 // Contract ABI and Address
 const contractABI = require('./DecentraAid.json').abi;
-const contractAddress = "0x332A16bC494c37e65BdC7f3E4d349Ba2eC30ea6f";
+const contractAddress = "0xdEE61Bae88a5E743e39444b2e0e6E8EE6E493085";
 const Contract = new web3.eth.Contract(contractABI, contractAddress);
 
 async function getHours() {
@@ -449,18 +449,23 @@ return (
 
 							<div className="createEvent-button">
 							
-								<button id="submitEvent" onClick={() => createEvents(
-								eventNames, 
-								organizations, 
-								locations, 
-								dates, 
-								startTimes, 
-								endTimes, 
-								totalHours, 
-								maxVolunteers, 
-								maxLeaders, 
-								eventDescriptions)}>Create Event</button> 
-								
+							<button id="submitEvent" onClick={() => {
+								createEvents(
+									eventNames, 
+									organizations, 
+									locations, 
+									dates, 
+									startTimes, 
+									endTimes, 
+									totalHours, 
+									maxVolunteers, 
+									maxLeaders, 
+									eventDescriptions
+								);
+								setShowCreateEventPopup(false);
+							}}>Create Event</button>
+
+      					
 								<button onClick={() => setShowCreateEventPopup(false)}>Close</button>
 								
 							</div>
