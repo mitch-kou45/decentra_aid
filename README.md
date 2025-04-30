@@ -16,7 +16,7 @@ grab contract address and replace contract variable in app.js file
 
 cd decentra aid: npm run start
 
-- if you get the error after running npm run start: "react-scripts.js: not found"
+- if you get the error after running npm run start: "react-scripts.js: not found" or "react-scripts: Permission denied"
 Then do the following:
   - rm -rf node_modules package-lock.json
   - npm install
