@@ -20,6 +20,7 @@ cd decentra aid: npm run start
 Then do the following:
   - rm -rf node_modules package-lock.json
   - npm install
+  - npm run start
 
 sign into metamask
 
